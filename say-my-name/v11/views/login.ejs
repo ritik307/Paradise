@@ -1,0 +1,28 @@
+<%- include('partials/header') -%>
+
+
+<div class="container">
+	<div class="row">
+		<h1 style="text-align:center";>
+			Login <i class="fas fa-user-lock"></i>
+		</h1>
+		<div style="width: 30%; margin: 25px auto;">
+			<form action="/login" method="POST">
+				<div class="form-group">
+					<input class="form-control" type="text" placeholder="username" name="username">
+				</div>
+				
+				<div class="form-group">
+					<input class="form-control" type="password" placeholder="password" name="password">	
+				</div>
+				
+				<div>
+					<input class="btn btn-lg btn-primary btn-block" type="submit" value="Login">	
+				</div>
+				
+				<!--<button>SUBMIT</button> button used at the end of the form act as a submit type-->
+			</form>
+		</div>
+	</div>
+</div>
+<%- include('partials/footer') -%>

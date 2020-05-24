@@ -1,0 +1,71 @@
+body {
+  background-color: #000;
+}
+#landing-header {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-top: 40vh;
+}
+#landing-header h1 {
+  color: #fff;
+}
+.slideshow { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear infinite; 
+}
+.slideshow li:nth-child(1) { 
+  background-image: url(https://images.hdpictures.me/backgrounds/1600x900-anime-girl-school-uniform-flowers-clouds-8k-wallpaper.jpg) 
+}
+.slideshow li:nth-child(2) { 
+  background-image: url(https://templatefor.net/wp-content/uploads/2018/07/wp-anime-2560%C3%971600-000025431.jpg);
+  animation-delay: 10s; 
+}
+.slideshow li:nth-child(3) { 
+  background-image: url(https://images.hdqwalls.com/download/anime-cityscape-landscape-scenery-5k-r6-2880x1800.jpg);
+  animation-delay: 20s; 
+}
+.slideshow li:nth-child(4) { 
+  background-image: url(https://3.bp.blogspot.com/-kztZsQ3tYA0/XHXEgKrD6lI/AAAAAAAAC68/9qMXQyIB8BwIDB7IiMc-bPFUp9IkITORwCKgBGAs/w2560-h1440-c/anime-girl-sky-clouds-sunrise-scenery-4K-67.jpg);
+  animation-delay: 30s; 
+}
+.slideshow li:nth-child(5) { 
+  background-image: url(http://i.imgur.com/TVGe0Ef.jpg);
+  animation-delay: 40s; 
+}
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}

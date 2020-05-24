@@ -1,0 +1,42 @@
+<%- include('../partials/header'); -%>
+
+<div class="container">
+	<div class="container">
+		<div class="jumbotron">
+			<h1 class="text-light">
+				Welcome to my Paradise307 !! <i class="far fa-smile-wink"></i>
+			</h1>
+			<p>
+				<a class="button btn-primary btn-lg" href="/campgrounds/new">add New Spice</a>
+			</p>
+		</div>
+			
+	</div>
+	
+	<div class="row text-center" style="display:flex; flex-wrap: wrap;">
+		
+		<% campgrounds.forEach((camp)=>{ %>
+			
+		<div class="col-md-4 col-sm-6">
+				
+				<div class="thumbnail record">
+					
+					<img src="<%=camp["url"]%>">	
+					
+					<div class="caption text">
+						<strong><%=camp["name"] %></strong>
+					</div>
+					
+					<p>
+						<a href="/campgrounds/<%=camp._id %>" class="btn btn-success">more</a>
+					</p>
+					
+				</div>
+			</div>	
+		<% }) %>
+		
+	</div>
+		
+</div>
+
+<%- include('../partials/footer'); -%>
