@@ -25,4 +25,8 @@
 - Posting Comment
 ![](say-my-name/v11/screenshots/addingComment.PNG)
 
-
+# Instruction
+- Step1: Install node
+- Step2: npm install express mongoose body-parser ejs passport passport-local
+- Step3: node app.js
+- Step4: open your browser and write "localhost:3000" on search bar.
